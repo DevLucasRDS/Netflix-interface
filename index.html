@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Netflix</title>
+		<link rel="shortcut icon" href="imagens/netflix_favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/Style.css" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+
+		<!-- Owl css -->
+		<link rel="stylesheet" href="css/Owl/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/Owl/owl.carousel.min.css" />
+
+		<!--  Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="left">
+					<img src="imagens/Netflix_logo_name.png" alt="Logo Netflix" class="logo" />
+					<nav class="nav-menu">
+						<ul class="sidebar">
+							<li onclick="hideSidebar()">
+								<a href="#"><i class="fa-solid fa-xmark fa-2x"></i></a>
+							</li>
+							<li><a href="#">Início</a></li>
+							<li><a href="#">Tv Shows</a></li>
+							<li><a href="#">Filmes</a></li>
+							<li><a href="#">Novos e Popular</a></li>
+							<li><a href="#">Minha lista</a></li>
+							<li><a href="#">Navegar por idiomas</a></li>
+						</ul>
+
+						<ul class="nav-links">
+							<li class="hideOnMobile"><a href="#">Início</a></li>
+							<li class="hideOnMobile"><a href="#">Tv Shows</a></li>
+							<li class="hideOnMobile"><a href="#">Filmes</a></li>
+							<li class="hideOnMobile"><a href="#">Novos e Popular</a></li>
+							<li class="hideOnMobile"><a href="#">Minha lista</a></li>
+							<li class="hideOnMobile"><a href="#">Navegar por idiomas</a></li>
+							<li class="menu-button" onclick="showSidebar()">
+								<a href="#"><i class="fa-solid fa-bars fa-2x"></i></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="user-menu">
+					<i class="fas fa-search"></i>
+					<i class="fas fa-bell"></i>
+					<img src="imagens/profile.jpg" alt="Icone Usuário" class="user-icon" />
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="filme-principal">
+				<div class="container">
+					<h3 class="titulo">HOUSE OF CARDS</h3>
+					<p class="descricao">
+						Um sensor trabalha com sua esposa igualmente calculista para se vingar das pessoas que os
+						traíram.
+					</p>
+					<div class="botoes">
+						<button class="botao" role="button"><i class="fas fa-play"></i>Play</button>
+						<button role="button" class="botao" id="info">
+							<i class="fas fa-circle-info"></i> informações
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="container">
+			<div class="carrosel-filmes">
+				<h3>Populares na Netflix</h3>
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<img src="imagens/mini1.jpg" alt="filme1" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini2.jpg" alt="filme2" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini3.jpg" alt="filme3" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini4.jpg" alt="filme4" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini5.jpg" alt="filme5" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini6.jpg" alt="filme6" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini7.jpg" alt="filme7" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini8.jpg" alt="filme8" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini9.jpg" alt="filme9" />
+					</div>
+					<div class="item">
+						<img src="imagens/mini10.jpg" alt="filme10" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="Js/Owl/jquery.min.js"></script>
+		<script src="Js/Owl/owl.carousel.min.js"></script>
+		<script src="Js/Owl/setup.js"></script>
+		<script src="Js/responsive.js"></script>
+	</body>
+</html>
