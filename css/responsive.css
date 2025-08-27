@@ -39,12 +39,20 @@
 		content: url("../imagens/netflix_favicon.png"); /* coloca a logo reduzida */
 		height: 40px; /* opcional, ajusta o tamanho */
 	}
-}
-@media screen and (min-width: 1000px) {
-	.filme-principal p {
-		width: 50%;
+	@media screen and (max-width: 925px) {
+		.filme-principal .container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; /* centraliza verticalmente */
+			align-items: center; /* centraliza horizontalmente */
+			text-align: center; /* centraliza o texto */
+		}
+		.filme-principal .descricao {
+			width: 80%; /* opcional, pra não ficar muito esticado */
+		}
 	}
 }
+
 @media (max-width: 400px) {
 	.sidebar {
 		width: 100%;
