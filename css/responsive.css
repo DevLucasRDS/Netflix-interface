@@ -36,7 +36,7 @@
 		width: 300px;
 	}
 	.logo {
-		content: url("../imagens/netflix_favicon.png"); /* coloca a logo reduzida */
+		content: url("netflix_favicon.png"); /* coloca a logo reduzida */
 		height: 40px; /* opcional, ajusta o tamanho */
 	}
 	@media screen and (max-width: 925px) {
@@ -56,5 +56,29 @@
 @media (max-width: 400px) {
 	.sidebar {
 		width: 100%;
+	}
+}
+@media (max-width: 715px) {
+	.filme-principal .container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.titulo {
+		font-size: 30px;
+	}
+	.descricao {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+
+	.botao {
+		width: 95%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
